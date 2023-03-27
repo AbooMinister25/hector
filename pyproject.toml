@@ -1,11 +1,13 @@
 [project]
-name = "module_name"
+name = "hector"
 version = "0.0.0"
 description = ""
 authors = [
     {name = "AbooMinister25", email = "aboominister@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "textual[dev]>=0.1.18",
+]
 requires-python = ">=3.7"
 license = {text = "MIT"}
 [project.optional-dependencies]
@@ -56,8 +58,8 @@ line-length = 100
 profile = "black"
 
 [tool.pyright]
-include = ["module_name/**/*.py"]
-strict = ["module_name/**/*.py"]
+include = ["hector/**/*.py"]
+strict = ["hector/**/*.py"]
 
 [tool.pytest.ini_options]
 testpaths = [
